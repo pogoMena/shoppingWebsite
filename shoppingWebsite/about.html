@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About us!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // slide function demonstrating the use of a callback
+            let showAbout = function () {
+                $("#div2").show(500, function () {
+                    $("div2").slideDown(800);
+                });
+            };
+
+            // add the handler and slide up the first div
+            $("#div2").hide();
+            $("#Click").click(showAbout);
+            
+        });
+    </script>
+    <style type="text/css">
+        div {
+            border: 10px solid red;
+            background-color: black;
+            color: white;
+            
+            width: 90%;
+            height: 100%;
+            float: left;
+            margin-right: 10px;
+            padding: 10px;
+        }
+        #div1{
+            font-size: 40px;
+
+        }
+        #Click{
+            color: red;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ul id="navBar">
+        <li><a href = "index.html">Home Page</a></li>
+        <li><a class="active">About us</a></li>
+        <li><a href="shopping.html">Shopping</a></li>
+        <li><a href="login.html">Log in</a></li>
+        <li><a href="signUp.html">Sign up</a></li>
+        <li><a href="shoppingCart.html">Shopping cart</a></li>
+        <li><a href="logout.php">Log out</a></li>
+    </ul>
+    
+    <div id="div1"><p>Welcome to the Fascinating world of Frankensteins strange things and oddities "About us" page! <p id="Click">Click here</p> to learn more! <i>If you dare...</i></p></div>
+    <div id="div2"><p>This store all started when a scientist by the name of Frankenstein decided to put down his
+         scalpel and love of reanimating the dead, and instead pursue
+        the vision of the selling unique and <i>SPOOKY</i> items and a fair and reasonable prices. Due to the 
+        nature of the buisiness, once and item is sold, it is <b>GONE</b>, so dont wait!
+
+        <br>
+        <img src="pictures/project.jpg" alt="happy customer">
+        <p>Previous customer of mine, Im not happy unless you are happy!</p>
+<br>
+<br>
+        <p>P.S. Dont ask how we obtained the items (under penalty of law)</p>
+    </p></div>
+    
+</body>
+</html>

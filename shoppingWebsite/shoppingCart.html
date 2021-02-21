@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript/shoppingCart.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // slide function demonstrating the use of a callback
+            let comeOnDown = function () {
+                $("#hello").show(500, function () {
+                    $("div2").slideDown(800);
+                });
+            };
+
+            // add the handler and slide up the first div
+            $("#hello").hide();
+            $("#Click").click(comeOnDown);
+            
+        });
+    </script>
+
+
+
+    <title>Shopping cart</title>
+</head>
+<body>
+    <ul id="navBar">
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="shopping.html">Shopping</a></li>
+        <li><a href="login.html">Log in</a></li>
+        <li><a href="signUp.html">Sign up</a></li>
+        <li><a class="active">Shopping cart</a></li>
+        <li><a href="logout.php">Log out</a></li>
+    </ul>
+    <div id="cartHolder">
+        <ul id="shoppingCart">
+            <li></li>
+        </ul>
+    </div>
+    <p><u>     Total       </u> </p> <p id="total"></p>
+
+    <input type="button" id="Click" value= "Checkout">
+    <p id="hello">Come on down to our store and buy it in person. We are a CASH BUSINESS (but hey no taxes)</p>
+
+    
+</body>
+</html>
